@@ -1,0 +1,4 @@
+# Project exclude paths
+/stlife-ac/ac-authority/target/
+/stlife-ac/ac-base/target/
+/stlife-ac/ac-web/target/
