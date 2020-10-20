@@ -1,0 +1,436 @@
+2020-10-07 05:43:54.798 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h30s462ms).
+2020-10-07 05:43:54.116 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 396 ] - channel [id: 0x9e0fdbff, L:/127.0.0.1:62259 - R:/127.0.0.1:8091] read idle.
+2020-10-07 05:43:54.116 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 396 ] - channel [id: 0xb0e016e5, L:/127.0.0.1:62260 - R:/127.0.0.1:8091] read idle.
+2020-10-07 05:43:55.241 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 - R:/127.0.0.1:8091]
+2020-10-07 05:43:55.241 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 - R:/127.0.0.1:8091]
+2020-10-07 05:43:55.242 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 - R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.242 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 - R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.243 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.243 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.244 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.244 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.245 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.245 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.245 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.245 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.245 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.245 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.245 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.245 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.246 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]
+2020-10-07 05:43:55.246 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.246 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.246 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb0e016e5, L:/127.0.0.1:62260 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:55.247 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x9e0fdbff, L:/127.0.0.1:62259 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 05:43:57.561 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 05:43:57.563 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 05:43:57.575 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x5a247245, L:/127.0.0.1:58526 - R:/127.0.0.1:8091]
+2020-10-07 05:43:57.575 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 10 ms, version:1.3.0,role:TMROLE,channel:[id: 0x5a247245, L:/127.0.0.1:58526 - R:/127.0.0.1:8091]
+2020-10-07 05:43:57.582 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 05:43:57.583 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 05:43:57.590 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x81ba1140, L:/127.0.0.1:58527 - R:/127.0.0.1:8091]
+2020-10-07 05:43:57.590 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 5 ms, version:1.3.0,role:RMROLE,channel:[id: 0x81ba1140, L:/127.0.0.1:58527 - R:/127.0.0.1:8091]
+2020-10-07 08:46:14.079 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h2m19s275ms).
+2020-10-07 08:46:14.067 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 396 ] - channel [id: 0x5a247245, L:/127.0.0.1:58526 - R:/127.0.0.1:8091] read idle.
+2020-10-07 08:46:14.065 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 396 ] - channel [id: 0x81ba1140, L:/127.0.0.1:58527 - R:/127.0.0.1:8091] read idle.
+2020-10-07 08:46:14.149 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x81ba1140, L:/127.0.0.1:58527 - R:/127.0.0.1:8091]
+2020-10-07 08:46:14.150 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 - R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.149 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x5a247245, L:/127.0.0.1:58526 - R:/127.0.0.1:8091]
+2020-10-07 08:46:14.154 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 - R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.154 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.158 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.151 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.181 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.200 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.200 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.201 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.201 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.201 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.201 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.227 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.253 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.253 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.253 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.253 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.253 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.255 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.253 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.475 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]
+2020-10-07 08:46:14.475 [ NettyClientSelector_RMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x81ba1140, L:/127.0.0.1:58527 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.476 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 08:46:14.544 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x5a247245, L:/127.0.0.1:58526 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 09:00:02.864 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 09:00:02.865 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 09:00:02.873 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x4a8dd31f, L:/127.0.0.1:58654 - R:/127.0.0.1:8091]
+2020-10-07 09:00:02.873 [ timeoutChecker_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 5 ms, version:1.3.0,role:TMROLE,channel:[id: 0x4a8dd31f, L:/127.0.0.1:58654 - R:/127.0.0.1:8091]
+2020-10-07 09:00:02.877 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 09:00:02.877 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 09:00:02.881 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xb12de32f, L:/127.0.0.1:58655 - R:/127.0.0.1:8091]
+2020-10-07 09:00:02.881 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 3 ms, version:1.3.0,role:RMROLE,channel:[id: 0xb12de32f, L:/127.0.0.1:58655 - R:/127.0.0.1:8091]
+2020-10-07 09:00:25.520 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m11s449ms).
+2020-10-07 09:10:10.521 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s1ms).
+2020-10-07 09:16:09.942 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 758 ] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s378ms), soft-evicting connections from pool.
+2020-10-07 10:14:35.637 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s123ms).
+2020-10-07 10:17:43.697 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m8s60ms).
+2020-10-07 10:19:01.366 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s669ms).
+2020-10-07 11:54:57.106 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s118ms).
+2020-10-07 13:35:35.868 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h40m38s762ms).
+2020-10-07 13:43:41.552 [ Thread-3 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:43:41.555 [ Thread-3 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:43:41.569 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-07 13:43:41.574 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-07 13:43:41.575 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]
+2020-10-07 13:43:41.575 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]
+2020-10-07 13:43:41.576 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]
+2020-10-07 13:43:41.576 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]
+2020-10-07 13:43:41.576 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:43:41.576 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x4a8dd31f, L:/127.0.0.1:58654 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:43:47.478 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 50 ] - Starting SeataApplication on stlife with PID 38625 (/Users/stlife/tech/java/springboot/stlife/stlife-buz/buz-seata/target/classes started by stlife in /Users/stlife/tech/java/springboot/stlife)
+2020-10-07 13:43:47.480 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 675 ] - No active profile set, falling back to default profiles: default
+2020-10-07 13:43:47.981 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 126 ] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-07 13:43:48.046 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 182 ] - Finished Spring Data repository scanning in 53ms. Found 2 repository interfaces.
+2020-10-07 13:43:48.214 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'seataConfiguration' of type [org.stlife.buz.seata.configuration.SeataConfiguration$$EnhancerBySpringCGLIB$$1bb8d6f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:43:48.251 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is registry.conf
+2020-10-07 13:43:48.265 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is file.conf
+2020-10-07 13:43:48.310 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 164 ] - Initializing Global Transaction Clients ... 
+2020-10-07 13:43:48.384 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:43:48.384 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 172 ] - Transaction Manager Client is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:43:48.393 [ main ] - [ INFO  ] [ io.seata.rm.datasource.AsyncWorker : 125 ] - Async Commit Buffer Limit: 10000
+2020-10-07 13:43:48.393 [ main ] - [ INFO  ] [ io.seata.rm.datasource.xa.ResourceManagerXA : 40 ] - ResourceManagerXA init ...
+2020-10-07 13:43:48.398 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:43:48.398 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 177 ] - Resource Manager is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:43:48.398 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 181 ] - Global Transaction Clients are initialized. 
+2020-10-07 13:43:48.463 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e69a0c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:43:48.867 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 90 ] - Tomcat initialized with port(s): 20000 (http)
+2020-10-07 13:43:48.880 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:43:48.887 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-07 13:43:48.887 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-07 13:43:48.892 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/stlife/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-07 13:43:48.968 [ main ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-07 13:43:48.969 [ main ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 296 ] - Root WebApplicationContext: initialization completed in 1455 ms
+2020-10-07 13:43:49.111 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-10-07 13:43:49.275 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-10-07 13:43:49.322 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-07 13:43:49.395 [ main ] - [ INFO  ] [ org.hibernate.Version : 46 ] - HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-07 13:43:49.396 [ main ] - [ INFO  ] [ org.hibernate.cfg.Environment : 213 ] - HHH000206: hibernate.properties not found
+2020-10-07 13:43:49.544 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 49 ] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-07 13:43:49.669 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 157 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-07 13:43:50.189 [ main ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 415 ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:43:50.441 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$52c1d377] with name [productServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:43:50.457 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.OrderServiceImpl] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:43:50.636 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:43:50.675 [ main ] - [ WARN  ] [ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : 236 ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-07 13:43:50.832 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:43:50.855 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 20000 (http) with context path '/buz-seata'
+2020-10-07 13:43:50.856 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 59 ] - Started SeataApplication in 3.793 seconds (JVM running for 5.293)
+2020-10-07 13:44:00.153 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-07 13:44:00.154 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 524 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-07 13:44:00.161 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 546 ] - Completed initialization in 7 ms
+2020-10-07 13:44:00.197 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.TransactionManagerHolder : 40 ] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@157b4dd9
+2020-10-07 13:44:00.206 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:44:00.208 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:44:00.443 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xb4fa7096, L:/127.0.0.1:58667 - R:/127.0.0.1:8091]
+2020-10-07 13:44:00.452 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 160 ms, version:1.3.0,role:TMROLE,channel:[id: 0xb4fa7096, L:/127.0.0.1:58667 - R:/127.0.0.1:8091]
+2020-10-07 13:44:00.460 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57102263201435648]
+2020-10-07 13:44:00.463 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 33 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 13:44:00.597 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 37 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":93}
+2020-10-07 13:44:00.625 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 48 ] - 创建订单成功,订单信息为{"number":1,"oid":2014,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 13:44:00.626 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57102263201435648
+2020-10-07 13:44:00.643 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 143 ] - [192.168.43.225:8091:57102263201435648] commit status: Committed
+2020-10-07 13:44:32.560 [ http-nio-20000-exec-3 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57102397855371264]
+2020-10-07 13:44:32.560 [ http-nio-20000-exec-3 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 33 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 13:44:32.570 [ http-nio-20000-exec-3 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 37 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":92}
+2020-10-07 13:44:32.577 [ http-nio-20000-exec-3 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 48 ] - 创建订单成功,订单信息为{"number":1,"oid":2015,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 13:44:32.579 [ http-nio-20000-exec-3 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57102397855371264
+2020-10-07 13:44:32.585 [ http-nio-20000-exec-3 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 143 ] - [192.168.43.225:8091:57102397855371264] commit status: Committed
+2020-10-07 13:44:48.401 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:44:48.402 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:44:48.407 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xb1b90c65, L:/127.0.0.1:58820 - R:/127.0.0.1:8091]
+2020-10-07 13:44:48.407 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 3 ms, version:1.3.0,role:RMROLE,channel:[id: 0xb1b90c65, L:/127.0.0.1:58820 - R:/127.0.0.1:8091]
+2020-10-07 13:45:46.891 [ Thread-5 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:45:46.892 [ Thread-5 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:45:46.894 [ Thread-5 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-07 13:45:46.896 [ Thread-5 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-07 13:45:46.897 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]
+2020-10-07 13:45:46.898 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]
+2020-10-07 13:45:46.899 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]
+2020-10-07 13:45:46.899 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]
+2020-10-07 13:45:46.899 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:45:46.899 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xb4fa7096, L:/127.0.0.1:58667 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:45:51.718 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 50 ] - Starting SeataApplication on stlife with PID 38655 (/Users/stlife/tech/java/springboot/stlife/stlife-buz/buz-seata/target/classes started by stlife in /Users/stlife/tech/java/springboot/stlife)
+2020-10-07 13:45:51.720 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 675 ] - No active profile set, falling back to default profiles: default
+2020-10-07 13:45:52.111 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 126 ] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-07 13:45:52.169 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 182 ] - Finished Spring Data repository scanning in 53ms. Found 2 repository interfaces.
+2020-10-07 13:45:52.342 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'seataConfiguration' of type [org.stlife.buz.seata.configuration.SeataConfiguration$$EnhancerBySpringCGLIB$$4178a28d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:45:52.377 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is registry.conf
+2020-10-07 13:45:52.388 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is file.conf
+2020-10-07 13:45:52.424 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 164 ] - Initializing Global Transaction Clients ... 
+2020-10-07 13:45:52.476 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:45:52.476 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 172 ] - Transaction Manager Client is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:45:52.482 [ main ] - [ INFO  ] [ io.seata.rm.datasource.AsyncWorker : 125 ] - Async Commit Buffer Limit: 10000
+2020-10-07 13:45:52.483 [ main ] - [ INFO  ] [ io.seata.rm.datasource.xa.ResourceManagerXA : 40 ] - ResourceManagerXA init ...
+2020-10-07 13:45:52.486 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:45:52.486 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 177 ] - Resource Manager is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:45:52.486 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 181 ] - Global Transaction Clients are initialized. 
+2020-10-07 13:45:52.546 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54296c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:45:52.880 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 90 ] - Tomcat initialized with port(s): 20000 (http)
+2020-10-07 13:45:52.890 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:45:52.897 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-07 13:45:52.897 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-07 13:45:52.901 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/stlife/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-07 13:45:52.965 [ main ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-07 13:45:52.965 [ main ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 296 ] - Root WebApplicationContext: initialization completed in 1221 ms
+2020-10-07 13:45:53.077 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-10-07 13:45:53.230 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-10-07 13:45:53.264 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-07 13:45:53.310 [ main ] - [ INFO  ] [ org.hibernate.Version : 46 ] - HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-07 13:45:53.311 [ main ] - [ INFO  ] [ org.hibernate.cfg.Environment : 213 ] - HHH000206: hibernate.properties not found
+2020-10-07 13:45:53.423 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 49 ] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-07 13:45:53.520 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 157 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-07 13:45:53.903 [ main ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 415 ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:45:54.089 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$f28fc863] with name [productServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:45:54.104 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.OrderServiceImpl] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:45:54.259 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:45:54.285 [ main ] - [ WARN  ] [ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : 236 ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-07 13:45:54.417 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:45:54.435 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 20000 (http) with context path '/buz-seata'
+2020-10-07 13:45:54.437 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 59 ] - Started SeataApplication in 3.001 seconds (JVM running for 3.57)
+2020-10-07 13:46:04.538 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-07 13:46:04.538 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 524 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-07 13:46:04.545 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 546 ] - Completed initialization in 7 ms
+2020-10-07 13:46:04.575 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.TransactionManagerHolder : 40 ] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@1b73ce0d
+2020-10-07 13:46:04.582 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:46:04.583 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:46:04.773 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x2fd57f5e, L:/127.0.0.1:59071 - R:/127.0.0.1:8091]
+2020-10-07 13:46:04.780 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 32 ms, version:1.3.0,role:TMROLE,channel:[id: 0x2fd57f5e, L:/127.0.0.1:59071 - R:/127.0.0.1:8091]
+2020-10-07 13:46:04.784 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57102784666669056]
+2020-10-07 13:46:04.787 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 33 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 13:46:04.895 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 37 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":91}
+2020-10-07 13:46:04.925 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 48 ] - 创建订单成功,订单信息为{"number":1,"oid":2016,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 13:46:04.926 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57102784666669056
+2020-10-07 13:46:04.933 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 179 ] - [192.168.43.225:8091:57102784666669056] rollback status: Rollbacked
+2020-10-07 13:46:04.935 [ http-nio-20000-exec-1 ] - [ ERROR ] [ org.stlife.commons.exception.GlobalExceptionAdvice : 33 ] - / by zero
+2020-10-07 13:46:52.489 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:46:52.490 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:46:52.496 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x72d9a5d3, L:/127.0.0.1:59215 - R:/127.0.0.1:8091]
+2020-10-07 13:46:52.496 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 4 ms, version:1.3.0,role:RMROLE,channel:[id: 0x72d9a5d3, L:/127.0.0.1:59215 - R:/127.0.0.1:8091]
+2020-10-07 13:47:32.330 [ Thread-4 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:47:32.331 [ Thread-4 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:47:32.333 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-07 13:47:32.335 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-07 13:47:32.337 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]
+2020-10-07 13:47:32.337 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]
+2020-10-07 13:47:32.338 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]
+2020-10-07 13:47:32.338 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]
+2020-10-07 13:47:32.338 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:47:32.339 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x2fd57f5e, L:/127.0.0.1:59071 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:47:35.905 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 50 ] - Starting SeataApplication on stlife with PID 38675 (/Users/stlife/tech/java/springboot/stlife/stlife-buz/buz-seata/target/classes started by stlife in /Users/stlife/tech/java/springboot/stlife)
+2020-10-07 13:47:35.907 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 675 ] - No active profile set, falling back to default profiles: default
+2020-10-07 13:47:36.299 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 126 ] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-07 13:47:36.352 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 182 ] - Finished Spring Data repository scanning in 48ms. Found 2 repository interfaces.
+2020-10-07 13:47:36.523 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'seataConfiguration' of type [org.stlife.buz.seata.configuration.SeataConfiguration$$EnhancerBySpringCGLIB$$2f153e74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:47:36.558 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is registry.conf
+2020-10-07 13:47:36.568 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is file.conf
+2020-10-07 13:47:36.611 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 164 ] - Initializing Global Transaction Clients ... 
+2020-10-07 13:47:36.666 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:47:36.666 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 172 ] - Transaction Manager Client is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:47:36.671 [ main ] - [ INFO  ] [ io.seata.rm.datasource.AsyncWorker : 125 ] - Async Commit Buffer Limit: 10000
+2020-10-07 13:47:36.672 [ main ] - [ INFO  ] [ io.seata.rm.datasource.xa.ResourceManagerXA : 40 ] - ResourceManagerXA init ...
+2020-10-07 13:47:36.676 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:47:36.676 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 177 ] - Resource Manager is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:47:36.676 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 181 ] - Global Transaction Clients are initialized. 
+2020-10-07 13:47:36.739 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41c6083d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:47:37.074 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 90 ] - Tomcat initialized with port(s): 20000 (http)
+2020-10-07 13:47:37.084 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:47:37.091 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-07 13:47:37.091 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-07 13:47:37.095 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/stlife/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-07 13:47:37.160 [ main ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-07 13:47:37.160 [ main ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 296 ] - Root WebApplicationContext: initialization completed in 1228 ms
+2020-10-07 13:47:37.266 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-10-07 13:47:37.418 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-10-07 13:47:37.445 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-07 13:47:37.481 [ main ] - [ INFO  ] [ org.hibernate.Version : 46 ] - HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-07 13:47:37.482 [ main ] - [ INFO  ] [ org.hibernate.cfg.Environment : 213 ] - HHH000206: hibernate.properties not found
+2020-10-07 13:47:37.582 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 49 ] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-07 13:47:37.677 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 157 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-07 13:47:38.077 [ main ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 415 ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:47:38.272 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$e2b5b7f5] with name [productServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:47:38.288 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$4f7a5118] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:47:38.455 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:47:38.486 [ main ] - [ WARN  ] [ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : 236 ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-07 13:47:38.634 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:47:38.653 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 20000 (http) with context path '/buz-seata'
+2020-10-07 13:47:38.655 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 59 ] - Started SeataApplication in 3.047 seconds (JVM running for 3.494)
+2020-10-07 13:47:54.326 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-07 13:47:54.326 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 524 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-07 13:47:54.332 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 546 ] - Completed initialization in 6 ms
+2020-10-07 13:47:54.362 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.TransactionManagerHolder : 40 ] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@20d7603b
+2020-10-07 13:47:54.369 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:47:54.371 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:47:54.582 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xf1bc6669, L:/127.0.0.1:59429 - R:/127.0.0.1:8091]
+2020-10-07 13:47:54.591 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 35 ms, version:1.3.0,role:TMROLE,channel:[id: 0xf1bc6669, L:/127.0.0.1:59429 - R:/127.0.0.1:8091]
+2020-10-07 13:47:54.595 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57103245247385600]
+2020-10-07 13:47:54.606 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 35 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 13:47:54.696 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 39 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":91}
+2020-10-07 13:47:54.714 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 50 ] - 创建订单成功,订单信息为{"number":1,"oid":2017,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 13:47:54.715 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57103245247385600
+2020-10-07 13:47:54.725 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 179 ] - [192.168.43.225:8091:57103245247385600] rollback status: Rollbacked
+2020-10-07 13:47:54.727 [ http-nio-20000-exec-1 ] - [ ERROR ] [ org.stlife.commons.exception.GlobalExceptionAdvice : 33 ] - / by zero
+2020-10-07 13:48:36.676 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:48:36.677 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:48:36.682 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x499790d3, L:/127.0.0.1:59554 - R:/127.0.0.1:8091]
+2020-10-07 13:48:36.682 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 3 ms, version:1.3.0,role:RMROLE,channel:[id: 0x499790d3, L:/127.0.0.1:59554 - R:/127.0.0.1:8091]
+2020-10-07 13:50:32.642 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s111ms).
+2020-10-07 13:52:53.462 [ Thread-3 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:52:53.463 [ Thread-3 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:52:53.464 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-07 13:52:53.466 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-07 13:52:53.468 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]
+2020-10-07 13:52:53.468 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]
+2020-10-07 13:52:53.469 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]
+2020-10-07 13:52:53.469 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]
+2020-10-07 13:52:53.469 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:52:53.469 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xf1bc6669, L:/127.0.0.1:59429 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 13:52:57.136 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 50 ] - Starting SeataApplication on stlife with PID 38755 (/Users/stlife/tech/java/springboot/stlife/stlife-buz/buz-seata/target/classes started by stlife in /Users/stlife/tech/java/springboot/stlife)
+2020-10-07 13:52:57.138 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 675 ] - No active profile set, falling back to default profiles: default
+2020-10-07 13:52:57.525 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 126 ] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-07 13:52:57.573 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 182 ] - Finished Spring Data repository scanning in 41ms. Found 2 repository interfaces.
+2020-10-07 13:52:57.709 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'seataConfiguration' of type [org.stlife.buz.seata.configuration.SeataConfiguration$$EnhancerBySpringCGLIB$$e45a59d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:52:57.737 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is registry.conf
+2020-10-07 13:52:57.746 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is file.conf
+2020-10-07 13:52:57.781 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 164 ] - Initializing Global Transaction Clients ... 
+2020-10-07 13:52:57.824 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:52:57.824 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 172 ] - Transaction Manager Client is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:52:57.829 [ main ] - [ INFO  ] [ io.seata.rm.datasource.AsyncWorker : 125 ] - Async Commit Buffer Limit: 10000
+2020-10-07 13:52:57.830 [ main ] - [ INFO  ] [ io.seata.rm.datasource.xa.ResourceManagerXA : 40 ] - ResourceManagerXA init ...
+2020-10-07 13:52:57.833 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 13:52:57.833 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 177 ] - Resource Manager is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 13:52:57.833 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 181 ] - Global Transaction Clients are initialized. 
+2020-10-07 13:52:57.886 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f70b239b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 13:52:58.198 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 90 ] - Tomcat initialized with port(s): 20000 (http)
+2020-10-07 13:52:58.207 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:52:58.214 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-07 13:52:58.214 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-07 13:52:58.218 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/stlife/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-07 13:52:58.278 [ main ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-07 13:52:58.278 [ main ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 296 ] - Root WebApplicationContext: initialization completed in 1115 ms
+2020-10-07 13:52:58.386 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-10-07 13:52:58.539 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-10-07 13:52:58.567 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-07 13:52:58.607 [ main ] - [ INFO  ] [ org.hibernate.Version : 46 ] - HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-07 13:52:58.608 [ main ] - [ INFO  ] [ org.hibernate.cfg.Environment : 213 ] - HHH000206: hibernate.properties not found
+2020-10-07 13:52:58.708 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 49 ] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-07 13:52:58.806 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 157 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-07 13:52:59.189 [ main ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 415 ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 13:52:59.362 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$e5fa5221] with name [productServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:52:59.378 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$52beeb44] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 13:52:59.528 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-07 13:52:59.555 [ main ] - [ WARN  ] [ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : 236 ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-07 13:52:59.686 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-20000"]
+2020-10-07 13:52:59.703 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 20000 (http) with context path '/buz-seata'
+2020-10-07 13:52:59.705 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 59 ] - Started SeataApplication in 2.867 seconds (JVM running for 3.355)
+2020-10-07 13:53:05.477 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-07 13:53:05.477 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 524 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-07 13:53:05.484 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 546 ] - Completed initialization in 7 ms
+2020-10-07 13:53:05.520 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.TransactionManagerHolder : 40 ] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@f367d71
+2020-10-07 13:53:05.528 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:53:05.530 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:53:05.722 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xa68fcc9d, L:/127.0.0.1:60409 - R:/127.0.0.1:8091]
+2020-10-07 13:53:05.731 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 154 ms, version:1.3.0,role:TMROLE,channel:[id: 0xa68fcc9d, L:/127.0.0.1:60409 - R:/127.0.0.1:8091]
+2020-10-07 13:53:05.736 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57104550263132160]
+2020-10-07 13:53:05.746 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 36 ] - 开启分布式事务处理，事务ID：192.168.43.225:8091:57104550263132160
+2020-10-07 13:53:05.746 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 37 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 13:53:05.846 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 41 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":91}
+2020-10-07 13:53:05.867 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 52 ] - 创建订单成功,订单信息为{"number":1,"oid":2018,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 13:53:05.867 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57104550263132160
+2020-10-07 13:53:35.884 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 179 ] - [192.168.43.225:8091:57104550263132160] rollback status: Rollbacked
+2020-10-07 13:53:35.886 [ http-nio-20000-exec-1 ] - [ ERROR ] [ org.stlife.commons.exception.GlobalExceptionAdvice : 33 ] - / by zero
+2020-10-07 13:53:57.837 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 13:53:57.838 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 13:53:57.845 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x6a636595, L:/127.0.0.1:60586 - R:/127.0.0.1:8091]
+2020-10-07 13:53:57.845 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 5 ms, version:1.3.0,role:RMROLE,channel:[id: 0x6a636595, L:/127.0.0.1:60586 - R:/127.0.0.1:8091]
+2020-10-07 14:08:42.452 [ Thread-3 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-07 14:08:42.453 [ Thread-3 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 14:08:42.454 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-07 14:08:42.457 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-07 14:08:42.458 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]
+2020-10-07 14:08:42.458 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]
+2020-10-07 14:08:42.459 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]
+2020-10-07 14:08:42.459 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]
+2020-10-07 14:08:42.459 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 14:08:42.459 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa68fcc9d, L:/127.0.0.1:60409 ! R:/127.0.0.1:8091]) will closed
+2020-10-07 14:08:45.097 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 50 ] - Starting SeataApplication on stlife with PID 38897 (/Users/stlife/tech/java/springboot/stlife/stlife-buz/buz-seata/target/classes started by stlife in /Users/stlife/tech/java/springboot/stlife)
+2020-10-07 14:08:45.099 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 675 ] - No active profile set, falling back to default profiles: default
+2020-10-07 14:08:45.477 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 126 ] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-07 14:08:45.529 [ main ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 182 ] - Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2020-10-07 14:08:45.675 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'seataConfiguration' of type [org.stlife.buz.seata.configuration.SeataConfiguration$$EnhancerBySpringCGLIB$$4c43da2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 14:08:45.708 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is registry.conf
+2020-10-07 14:08:45.719 [ main ] - [ INFO  ] [ io.seata.config.FileConfiguration : 121 ] - The configuration file used is file.conf
+2020-10-07 14:08:45.757 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 164 ] - Initializing Global Transaction Clients ... 
+2020-10-07 14:08:45.820 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 14:08:45.821 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 172 ] - Transaction Manager Client is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 14:08:45.827 [ main ] - [ INFO  ] [ io.seata.rm.datasource.AsyncWorker : 125 ] - Async Commit Buffer Limit: 10000
+2020-10-07 14:08:45.828 [ main ] - [ INFO  ] [ io.seata.rm.datasource.xa.ResourceManagerXA : 40 ] - ResourceManagerXA init ...
+2020-10-07 14:08:45.833 [ main ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientBootstrap : 147 ] - NettyClientBootstrap has started
+2020-10-07 14:08:45.833 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 177 ] - Resource Manager is initialized. applicationId[buz-seata] txServiceGroup[stlife_seata_tx_group]
+2020-10-07 14:08:45.833 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 181 ] - Global Transaction Clients are initialized. 
+2020-10-07 14:08:45.900 [ main ] - [ INFO  ] [ o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5ef4a3f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-07 14:08:46.248 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 90 ] - Tomcat initialized with port(s): 20000 (http)
+2020-10-07 14:08:46.258 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-20000"]
+2020-10-07 14:08:46.266 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-10-07 14:08:46.267 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-07 14:08:46.272 [ main ] - [ INFO  ] [ org.apache.catalina.core.AprLifecycleListener : 173 ] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/stlife/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2020-10-07 14:08:46.348 [ main ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-10-07 14:08:46.348 [ main ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 296 ] - Root WebApplicationContext: initialization completed in 1225 ms
+2020-10-07 14:08:46.461 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-10-07 14:08:46.613 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-10-07 14:08:46.641 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-07 14:08:46.680 [ main ] - [ INFO  ] [ org.hibernate.Version : 46 ] - HHH000412: Hibernate Core {5.3.7.Final}
+2020-10-07 14:08:46.681 [ main ] - [ INFO  ] [ org.hibernate.cfg.Environment : 213 ] - HHH000206: hibernate.properties not found
+2020-10-07 14:08:46.800 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 49 ] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-07 14:08:46.900 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 157 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-07 14:08:47.296 [ main ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 415 ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-07 14:08:47.468 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$8edbc879] with name [productServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 14:08:47.484 [ main ] - [ INFO  ] [ i.seata.spring.annotation.GlobalTransactionScanner : 231 ] - Bean[org.stlife.buz.seata.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$fba0619c] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-10-07 14:08:47.643 [ main ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-07 14:08:47.674 [ main ] - [ WARN  ] [ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration : 236 ] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-07 14:08:47.815 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-20000"]
+2020-10-07 14:08:47.832 [ main ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 20000 (http) with context path '/buz-seata'
+2020-10-07 14:08:47.834 [ main ] - [ INFO  ] [ org.stlife.buz.seata.SeataApplication : 59 ] - Started SeataApplication in 3.027 seconds (JVM running for 3.458)
+2020-10-07 14:08:50.714 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/buz-seata] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-07 14:08:50.714 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 524 ] - Initializing Servlet 'dispatcherServlet'
+2020-10-07 14:08:50.720 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 546 ] - Completed initialization in 6 ms
+2020-10-07 14:08:50.750 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.TransactionManagerHolder : 40 ] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@20d7603b
+2020-10-07 14:08:50.757 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 14:08:50.759 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:TMROLE,address:127.0.0.1:8091,msg:< RegisterTMRequest{applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 14:08:50.943 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.TmNettyRemotingClient : 138 ] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x0e0cbf62, L:/127.0.0.1:63325 - R:/127.0.0.1:8091]
+2020-10-07 14:08:50.950 [ rpcMergeMessageSend_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 145 ms, version:1.3.0,role:TMROLE,channel:[id: 0x0e0cbf62, L:/127.0.0.1:63325 - R:/127.0.0.1:8091]
+2020-10-07 14:08:50.955 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 108 ] - Begin new global transaction [192.168.43.225:8091:57108514798964736]
+2020-10-07 14:08:50.964 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 36 ] - 开启分布式事务处理，事务ID：192.168.43.225:8091:57108514798964736
+2020-10-07 14:08:50.964 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 37 ] - 接收到1号商品的下单请求,接下来调用商品微服务查询此商品信息
+2020-10-07 14:08:51.055 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 41 ] - 查询到1号商品的信息,内容是:{"pid":1,"pname":"电脑","pprice":5005.0,"stock":91}
+2020-10-07 14:08:51.073 [ http-nio-20000-exec-1 ] - [ INFO  ] [ org.stlife.buz.seata.service.impl.OrderServiceImpl : 52 ] - 创建订单成功,订单信息为{"number":1,"oid":2019,"pid":1,"pname":"电脑","pprice":5005.0,"uid":1,"username":"测试用户"}
+2020-10-07 14:08:51.074 [ http-nio-20000-exec-1 ] - [ INFO  ] [ o.stlife.buz.seata.service.impl.ProductServiceImpl : 37 ] - seata id:192.168.43.225:8091:57108514798964736
+2020-10-07 14:09:21.091 [ http-nio-20000-exec-1 ] - [ INFO  ] [ io.seata.tm.api.DefaultGlobalTransaction : 179 ] - [192.168.43.225:8091:57108514798964736] rollback status: Rollbacked
+2020-10-07 14:09:21.093 [ http-nio-20000-exec-1 ] - [ ERROR ] [ org.stlife.commons.exception.GlobalExceptionAdvice : 33 ] - / by zero
+2020-10-07 14:09:45.834 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 99 ] - will connect to 127.0.0.1:8091
+2020-10-07 14:09:45.835 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 56 ] - NettyPool create channel to transactionRole:RMROLE,address:127.0.0.1:8091,msg:< RegisterRMRequest{resourceIds='null', applicationId='buz-seata', transactionServiceGroup='stlife_seata_tx_group'} >
+2020-10-07 14:09:45.840 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.RmNettyRemotingClient : 151 ] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x2fcac4bc, L:/127.0.0.1:63466 - R:/127.0.0.1:8091]
+2020-10-07 14:09:45.840 [ timeoutChecker_2_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 81 ] - register success, cost 3 ms, version:1.3.0,role:RMROLE,channel:[id: 0x2fcac4bc, L:/127.0.0.1:63466 - R:/127.0.0.1:8091]
+2020-10-07 14:29:42.226 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m55s405ms).

@@ -4,13 +4,21 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-ac" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-ac/ac-authority" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-ac/ac-autoconfigurer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-ac/ac-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-ac/ac-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-ac/ac-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-ac/ac-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-buz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-buz/buz-seata" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-commons/commons-exception" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-commons/commons-logging" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-commons/commons-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-commons/commons-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-commons/commons-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-commons/commons-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stlife-commons/commons-web-context" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stlife-commons/stlife-commons-utils" charset="UTF-8" />
   </component>
 </project>

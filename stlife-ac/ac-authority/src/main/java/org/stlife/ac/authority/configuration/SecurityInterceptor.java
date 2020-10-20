@@ -22,7 +22,7 @@ import java.io.IOException;
  * @since 2020-09-21 16:58
  **/
 @Component
-public class FilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
+public class SecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
 
 
     @Autowired

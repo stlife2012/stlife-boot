@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ac-authority" />
-        <module name="ac-web" />
-        <module name="commons-utils" />
+        <module name="commons-exception" />
+        <module name="commons-web-context" />
         <module name="ac-base" />
+        <module name="ac-starter" />
+        <module name="ac-web" />
+        <module name="ac-autoconfigurer" />
+        <module name="commons-web" />
+        <module name="commons-utils" />
+        <module name="ac-authority" />
+        <module name="commons-logging" />
+        <module name="buz-seata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,10 +27,18 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ac-authority" options="-parameters" />
+      <module name="ac-autoconfigurer" options="-parameters" />
       <module name="ac-base" options="-parameters" />
       <module name="ac-entity" options="-parameters" />
+      <module name="ac-starter" options="-parameters" />
       <module name="ac-web" options="-parameters" />
+      <module name="buz-seata" options="-parameters" />
+      <module name="commons-exception" options="-parameters" />
+      <module name="commons-logging" options="-parameters" />
       <module name="commons-utils" options="-parameters" />
+      <module name="commons-web" options="-parameters" />
+      <module name="commons-web-context" options="-parameters" />
+      <module name="stlife-buz" options="-parameters" />
       <module name="stlife-commons-utils" options="-parameters" />
     </option>
   </component>

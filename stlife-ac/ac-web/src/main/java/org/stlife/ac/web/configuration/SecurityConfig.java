@@ -16,8 +16,8 @@ import org.stlife.ac.authority.service.LoginUserDetailsService;
  * @author Stlife
  * @since 2020-09-21 17:03
  **/
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         //校验用户
-        auth.userDetailsService( userService ).passwordEncoder( new PasswordEncoder() {
+        auth.userDetailsService(userService).passwordEncoder( new PasswordEncoder() {
             //对密码进行加密
             @Override
             public String encode(CharSequence charSequence) {
@@ -55,6 +55,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().accessDeniedPage( "/401" );
         http.logout().logoutSuccessUrl( "/" );
     }
-
 
 }

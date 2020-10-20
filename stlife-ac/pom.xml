@@ -15,6 +15,8 @@
         <module>ac-authority</module>
         <module>ac-web</module>
         <module>ac-base</module>
+        <module>ac-starter</module>
+        <module>ac-autoconfigurer</module>
     </modules>
 
 

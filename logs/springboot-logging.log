@@ -1,0 +1,17 @@
+2020-10-20 04:29:23.542 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h26m29s33ms).
+2020-10-20 04:31:10.942 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s391ms).
+2020-10-20 07:02:18.043 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h30m37s91ms).
+2020-10-20 09:00:02.008 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57m43s965ms).
+2020-10-20 19:07:39.770 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 758 ] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s675ms), soft-evicting connections from pool.
+2020-10-20 19:08:39.341 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s572ms).
+2020-10-20 20:22:35.286 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 766 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s157ms).
+2020-10-20 21:31:18.476 [ Thread-3 ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-20 21:31:18.477 [ Thread-3 ] - [ INFO  ] [ o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 597 ] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-20 21:31:18.488 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2020-10-20 21:31:18.490 [ Thread-3 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2020-10-20 21:31:18.491 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 384 ] - channel inactive: [id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]
+2020-10-20 21:31:18.491 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyClientChannelManager : 124 ] - return to pool, rm channel:[id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]
+2020-10-20 21:31:18.492 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 133 ] - channel valid false,channel:[id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]
+2020-10-20 21:31:18.492 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ io.seata.core.rpc.netty.NettyPoolableFactory : 120 ] - will destroy channel:[id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]
+2020-10-20 21:31:18.492 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]) will closed
+2020-10-20 21:31:18.492 [ NettyClientSelector_TMROLE_1_1 ] - [ INFO  ] [ i.seata.core.rpc.netty.AbstractNettyRemotingClient : 434 ] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x6cfd8872, L:/127.0.0.1:52233 ! R:/127.0.0.1:8091]) will closed

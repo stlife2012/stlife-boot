@@ -1,6 +1,7 @@
 package org.stlife.ac.authority.configuration;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.access.AccessDecisionManager;
@@ -18,10 +19,8 @@ import java.util.Iterator;
  * 鉴定用户是否有访问对应资源（方法或URL）的权限
  */
 @Component
+@Slf4j
 public class AuthorityDecisionManager implements AccessDecisionManager {
-
-    private final static Logger logger = LoggerFactory.getLogger(AuthorityDecisionManager.class);
-
     /**
      * 通过传递的参数来决定用户是否有访问对应受保护对象的权限
      *
