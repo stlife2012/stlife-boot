@@ -12,6 +12,7 @@
         <module>stlife-ac</module>
         <module>stlife-commons</module>
         <module>stlife-buz</module>
+        <module>stlife-components</module>
     </modules>
 
     <!--父程-->
