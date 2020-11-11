@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>cmp-zookeeper</module>
+        <module>cmp-neo4j</module>
     </modules>
 
     <properties>

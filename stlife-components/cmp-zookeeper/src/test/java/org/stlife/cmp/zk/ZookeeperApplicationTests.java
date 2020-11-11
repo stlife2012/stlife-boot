@@ -1,5 +1,6 @@
 package org.stlife.cmp.zk;
 
+import cn.hutool.core.util.ObjectUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
@@ -96,6 +97,34 @@ public class ZookeeperApplicationTests {
     public void doBuy() {
         count--;
         log.info("count值为{}", count);
+    }
+
+    private InterProcessMutex lock;
+
+    @Test
+    public void testLock() throws Exception {
+        lock = new InterProcessMutex(zkClient, "/stlife/lock");
+        try {
+            if(lock.acquire(10,TimeUnit.MINUTES)){
+                System.out.println("lock sucess");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            lock.release();
+        }
+
+    }
+
+    @Test
+    public void testRelease(){
+        if(ObjectUtil.isNotNull(lock)){
+            try {
+                lock.release();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }
