@@ -14,6 +14,8 @@
     <modules>
         <module>cmp-zookeeper</module>
         <module>cmp-neo4j</module>
+        <module>cmp-rbac</module>
+        <module>cmp-ds</module>
     </modules>
 
     <properties>
@@ -47,6 +49,18 @@
             <groupId>eu.bitwalker</groupId>
             <artifactId>UserAgentUtils</artifactId>
             <version>${user.agent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
