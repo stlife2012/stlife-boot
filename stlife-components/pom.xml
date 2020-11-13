@@ -16,6 +16,7 @@
         <module>cmp-neo4j</module>
         <module>cmp-rbac</module>
         <module>cmp-ds</module>
+        <module>cmp-mybatisplus</module>
     </modules>
 
     <properties>
