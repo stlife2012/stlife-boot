@@ -17,6 +17,7 @@
         <module>cmp-rbac</module>
         <module>cmp-ds</module>
         <module>cmp-mybatis-plus</module>
+        <module>cmp-gen</module>
     </modules>
 
     <properties>

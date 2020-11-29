@@ -159,4 +159,13 @@ public class UserServiceTest extends MybatisPlusApplicationTests {
         list.forEach(System.out::println);
     }
 
+    /**
+     * 关联表查询
+     */
+    @Test
+    public void testUserList(){
+        List<User> list = userService.getUserList("管理员");
+        list.forEach(System.out::println);
+    }
+
 }

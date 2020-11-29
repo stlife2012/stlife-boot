@@ -32,7 +32,6 @@ import java.util.Set;
  * Jwt 认证过滤器
  * </p>
  *
- * @package: com.xkcoding.rbac.security.config
  * @description: Jwt 认证过滤器
  * @author: yangkai.shen
  * @date: Created in 2018-12-10 15:15
@@ -70,8 +69,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
                 authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 
-                SecurityContextHolder.getContext()
-                        .setAuthentication(authentication);
+                SecurityContextHolder.getContext().setAuthentication(authentication);
                 filterChain.doFilter(request, response);
             } catch (SecurityException e) {
                 ResponseUtil.renderJson(response, e);
