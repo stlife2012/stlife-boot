@@ -66,20 +66,20 @@ public class CodeGenServiceTest {
 
         TableRequest request = new TableRequest();
         request.setPrepend("jdbc:mysql://");
-        request.setUrl("127.0.0.1:3306/spring-boot-demo");
+        request.setUrl("127.0.0.1:3306/stlife_test");
         request.setUsername("root");
         request.setPassword("root");
         request.setTableName("shiro_user");
         config.setRequest(request);
 
         config.setModuleName("shiro");
-        config.setAuthor("Yangkai.Shen");
-        config.setComments("用户角色信息");
-        config.setPackageName("com.xkcoding");
+        config.setAuthor("stlife");
+        config.setComments("用户信息");
+        config.setPackageName("org.stlife");
         config.setTablePrefix("shiro_");
 
         byte[] zip = codeGenService.generatorCode(config);
-        OutputStream outputStream = new FileOutputStream(new File("/Users/yangkai.shen/Desktop/" + request.getTableName() + ".zip"));
+        OutputStream outputStream = new FileOutputStream(new File("./sources/" + request.getTableName() + ".zip"));
         IoUtil.write(outputStream, true, zip);
     }
 
@@ -90,15 +90,6 @@ public class CodeGenServiceTest {
 
         TableRequest table = buildTableConfig();
         List<TableRequest> tableList = new ArrayList<>();
-
-//        TableRequest request = new TableRequest();
-//        request.setPrepend("jdbc:mysql://");
-//        request.setUrl("127.0.0.1:3306/spring-boot-demo");
-//        request.setUsername("root");
-//        request.setPassword("root");
-//        request.setTableName("shiro_user");
-//        request.setTableNames("".split(","));
-//        config.setRequest(table);
         table.setTableName("sec_user");
         tableList.add(table);
 
@@ -120,4 +111,37 @@ public class CodeGenServiceTest {
         IoUtil.write(outputStream, true, zip);
     }
 
+    /**
+     * 描述：根据db生成所有的表
+     * @author Stlife
+     * @since 2020-11-30 22:20
+     */
+    @Test
+    @SneakyThrows
+    public void testGeneratorCodeByDb() {
+        TableRequest table = buildTableConfig();
+        PageResult<Entity> dbTables = codeGenService.listTables(table);
+
+        List<TableRequest> tableList = new ArrayList<>();
+        dbTables.getList().forEach(entity -> {
+            TableRequest tableRequest = new TableRequest();
+            BeanUtil.copyProperties(table,tableRequest);
+            tableRequest.setTableName(entity.values().toArray()[0].toString());
+            tableList.add(tableRequest);
+        });
+
+        GenConfig config = new GenConfig();
+        config.setTables(tableList);
+        config.setModuleName("rbac");
+        config.setAuthor("stlife");
+        config.setComments("信息管理");
+        config.setPackageName("org.stlife.rbac");
+        config.setTablePrefix("sec_");
+
+        tableList.forEach(System.out::println);
+
+        byte[] zip = codeGenService.generatorCode(config);
+        OutputStream outputStream = new FileOutputStream(new File("./sources/src.zip"));
+        IoUtil.write(outputStream, true, zip);
+    }
 }
